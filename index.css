@@ -1,20 +1,30 @@
+*{
+    --section-padding: 1em;
+    --section-border-size: 2px;
+    --back-color: black;
+    --front-color: white;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--back-color);
+    color: var(--front-color);
 }
 
 section{
-    border: 2px solid black;
+    border: var(--section-border-size) solid var(--front-color);
     border-radius: 0.5rem;
-    padding: 1em;
+    padding: var(--section-padding);
     position: relative;
 }
 
 .section-title{
     position: absolute;
-    background-color: white;
+    background-color: var(--back-color);
+    color: var(--front-color);
     top: -0.75em;
     left: 1em;
-    border: solid 1px black;
+    border: solid 1px var(--front-color);
     border-radius: 0.5rem;
     padding: 0.2em;
     font-size: 0.75em;
